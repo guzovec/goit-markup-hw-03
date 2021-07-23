@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/raleway-v19-latin-700.woff) format(woff), url(../fonts/raleway-v19-latin-700.woff2) format(woff2);
+  font-size: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robot';
+  src: url(../fonts/roboto-v27-latin-regular.woff) format(woff),
+    url(../fonts/roboto-v27-latin-regular.woff2) format(woff2);
+  font-size: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robot';
+  src: url(../fonts/roboto-v27-latin-500.woff) format(woff), url(../fonts/roboto-v27-latin-500.woff2) format(woff2);
+  font-size: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robot';
+  src: url(../fonts/roboto-v27-latin-700.woff) format(woff), url(../fonts/roboto-v27-latin-700.woff2) format(woff2);
+  font-size: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robot';
+  src: url(../fonts/roboto-v27-latin-900.woff) format(woff), url(../fonts/roboto-v27-latin-900.woff2) format(woff2);
+  font-size: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --page-title-cl: #000000;
+  --main-text-cl: #212121;
+  --title-cl: #ffffff;
+  --alt-text-cl: #757575;
+  --accent-cl: #2196f3;
+
+  --dark-bg: #2f303a;
+  --second-bg: #f5f4fa;
+
+  --main-font: 'Roboto', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--alt-text-cl);
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list-color,
+.address-color {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.list-color {
+  color: var(--main-text-cl);
+}
+
+.link-btn {
+  font-weight: 500;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+.list {
+  list-style: none;
+}
+
+.page-title,
+.span-title,
+.second-span-title {
+  font-family: var(--title-font);
+  font-size: 26px;
+  line-height: 1.2;
+}
+.page-title {
+  color: var(--accent-cl);
+}
+.span-title {
+  color: var(--page-title-cl);
+}
+.second-span-title {
+  color: var(--title-cl);
+}
+.dark-bg {
+  background-color: var(--dark-bg);
+  text-align: center;
+}
+.section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+}
+.white-space {
+  white-space: nowrap;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--title-cl);
+  background-color: var(--accent-cl);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--title-cl);
+}
+.second-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.second-btn:hover,
+.second-btn:focus {
+  color: var(--title-cl);
+  background-color: var(--accent-cl);
+}
+.title-lable {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.text-lable {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.second-bg .second-btn {
+  background-color: var(--second-bg);
+  text-align: center;
+}
+.time-item {
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team-item {
+  text-align: center;
+}
+.team-item-name {
+  font-weight: 500;
+}
+.team-item-name,
+.team-item-position {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.19;
+}
+.title-lable,
+.time-item,
+.team-item-name,
+.second-btn {
+  color: var(--main-text-cl);
+}
+.team-item-position {
+  color: var(--alt-text-cl);
+}
+.work-name {
+  color: var(--main-text-cl);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.work-text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+.addres {
+  font-style: inherit;
+  color: var(--title-cl);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.second-link {
+  font-style: normal;
+  color: var(--title-cl);
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 1.71;
+}
